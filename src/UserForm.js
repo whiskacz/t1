@@ -10,7 +10,7 @@ export default function UserForm( {handleAddUser} ) {
     const handleSubmit = (e) => {
         e.preventDefault()
         handleAddUser({ ...element })
-        setElement({...element, name:'', email: ''})
+        setElement({...element, name:'', email: ''}) 
     }
 
   return (
