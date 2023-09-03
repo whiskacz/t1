@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function UsersList( {users} ) {
   return (
-    <div>
         <table>
             <thead>
             <tr>
@@ -10,7 +9,7 @@ export default function UsersList( {users} ) {
                 <th>email</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody data-testid='users'>
         {users.map((element) =>  (
                 <tr key={element.name}>
                     <td>{element.name}</td>
@@ -20,7 +19,5 @@ export default function UsersList( {users} ) {
         )}      
             </tbody>
         </table>
-
-    </div>
   )
 }
